@@ -82,21 +82,7 @@ public partial class Default_for_PDF_Document : System.Web.UI.Page
             PdfImportedPage page = writer.GetImportedPage(pdfReader, i);
             writer.DirectContent.AddTemplate(page, 0, 0);
         }
-    }
-
-    //private string GetHtmlContent()
-    //{
-    //    // Example HTML content; replace with actual HTML generation logic
-    //    return @"
-    //        <html>
-    //        <body>
-    //            <h1>Form Data</h1>
-    //            <p>Name: John Doe</p>
-    //            <p>Email: john.doe@example.com</p>
-    //            <p>This is the content of the HTML page that will be added to the PDF.</p>
-    //        </body>
-    //        </html>";
-    //}
+    }   
 
     private string GetHtmlContent()
     {
